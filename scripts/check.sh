@@ -23,6 +23,7 @@ required_files=(
   "知识库/常见仿写失败类型.md"
   "知识库/半文言与白话夹文言标准.md"
   "知识库/爆款哲学文稿结构库.md"
+  "scripts/update.sh"
 )
 
 for file in "${required_files[@]}"; do
@@ -43,4 +44,3 @@ if grep -R '/value\|/hype-editor' "$ROOT_DIR/SKILL.md" >/dev/null 2>&1; then
 fi
 
 echo "benchmark-skill check passed"
-

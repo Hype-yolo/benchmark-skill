@@ -54,7 +54,7 @@ benchmark-skill/
 克隆仓库：
 
 ```bash
-git clone https://github.com/你的用户名/benchmark-skill.git
+git clone https://github.com/Hype-yolo/benchmark-skill.git
 ```
 
 复制到 Agent skills 目录：
@@ -63,6 +63,20 @@ git clone https://github.com/你的用户名/benchmark-skill.git
 mkdir -p ~/.agents/skills/benchmark
 cp benchmark-skill/SKILL.md ~/.agents/skills/benchmark/SKILL.md
 ```
+
+## 更新
+
+如果这个仓库后续更新了，已经 clone 到本地的用户可以进入仓库目录，运行一条命令同步最新版：
+
+```bash
+bash scripts/update.sh
+```
+
+它会自动执行：
+
+- 从 GitHub 拉取最新代码
+- 创建或更新 `~/.agents/skills/benchmark/SKILL.md`
+- 把最新版 `SKILL.md` 同步到本地 skill 目录
 
 ## 16 个检查维度
 
